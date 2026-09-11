@@ -9,9 +9,9 @@ a) Input the name of the product;
 
 b) Input its price;
 
-c) The program will check if the price is less than 200, more than 200 but less than 300 or more than 300;
+c) The program will check if the price is less than 200, between 200 and 300 or more than 300;
 
-d) The program then calculates the price with its corresponding discount and then print the final value to the user.
+d) The program then calculates the price with its corresponding discount of 5%, 10% or 15% and then print the final value to the user.
 
 e) In case the user types a string, two hundred for example, instead of a float, the try will the print that no value was insertend and the nd the program.
 
