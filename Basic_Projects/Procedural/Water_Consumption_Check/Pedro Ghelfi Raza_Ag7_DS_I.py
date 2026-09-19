@@ -23,7 +23,7 @@ except ValueError:
 match Building_Type:
     case "comercial":
             print ("O consumo será relacionado a uma conta comercial e tarifas diferentes. Consulte o plano corporativo.")
-    case "apartamento" if Monthly_Consumption <10:
+    case "apartamento" | "casa" if Monthly_Consumption <10:
             print ("Consumo enconômico; Excelente controle de agua!")
     case "apartamento" | "casa" if Monthly_Consumption <=25:
             print ("Consumo moderado e esta dentro do padrão residencial.")
