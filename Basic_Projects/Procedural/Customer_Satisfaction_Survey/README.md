@@ -4,10 +4,15 @@
 In this exercise, I have trained how to apply for and while iterations.
 
 # Important observations:
+
 i) The for iteration is set to 50 surveys. But, the print ("Participante", i) line was added to count the number of participants and also print the number on the screen for the user to know homw many surveys have been complete until the limit 0f 50 is achieved.
+
 ii) There have been many commands used here. But, the main ones are the nested while iterations within the for. Also, the nested if +elif conditional within the while, within the for.
+
 iii) There have been many guards added to stop ages below 18 and above 120 with an if + elif command within a try+except and also, a .isdigit() if the user tries to add a number or special characters in the name area. Also, if the user tries to input anything different than the needed strings for the for iteration to count, the program will enter an infinite loop saying their input is incorrect to force them to input only the needed words for the program to continue.
+
 iv) The variable survey = true is a control variable to work alongside the try+except Value Error if the user tries to insert an age below 18, since this surveu can only be done by adults.
+
 v) Finally, added an if command to force the user to decide to stop the iteration if they don't want to continue.
 
 # Basic instructions on how to run the program:
