@@ -29,6 +29,114 @@ d) The program finally asks if they want to continue or not;
 
 e) If they input the value "2", the program ends and the for iteration counts the answers, presenting them to the user.
 
+Below is the logic pathway of the code:
+
+```text
+                    ┌─────────────────────────┐
+                    │      FOR i in range     │
+                    │        (1, 51)          │
+                    └────────────┬────────────┘
+                                 │
+                                 ▼
+                       ┌──────────────────┐
+                       │  New participant │
+                       └────────┬─────────┘
+                                │
+                                ▼
+                    ┌─────────────────────────┐
+                    │       WHILE True        │
+                    │      (validate name)    │
+                    └────────────┬────────────┘
+                                 │
+                           Is name valid?
+                          ┌──────┴──────┐
+                        NO             YES
+                         │               │
+                         ▼               ▼
+                   Show error       EXIT WHILE
+                         │               │
+                         └───────┐       │
+                                 │       ▼
+                                 │  ┌──────────────────┐
+                                 │  │    WHILE True    │
+                                 │  │  (validate age)  │
+                                 │  └────────┬─────────┘
+                                 │           │
+                                 │      Is age valid?
+                                 │      ┌────┴────┐
+                                 │     NO        YES
+                                 │      │          │
+                                 │      ▼          ▼
+                                 │  Show error  EXIT WHILE
+                                 │      │          │
+                                 │      └────┐     │
+                                 │           │     ▼
+                                 │           │  Is age < 18?
+                                 │           │   ┌────┴────┐
+                                 │           │  YES        NO
+                                 │           │   │          │
+                                 │           │   ▼          ▼
+                                 │           │  END      Continue
+                                 │           │  SURVEY    survey
+                                 │           │              │
+                                 │           │              ▼
+                                 │           │     ┌─────────────────┐
+                                 │           │     │    WHILE True   │
+                                 │           │     │ (validate answer)│
+                                 │           │     └────────┬────────┘
+                                 │           │              │
+                                 │           │        Is answer valid?
+                                 │           │        ┌─────┴─────┐
+                                 │           │       NO          YES
+                                 │           │        │            │
+                                 │           │        ▼            ▼
+                                 │           │   Show error     Count answer
+                                 │           │        │            │
+                                 │           │        │          BREAK
+                                 │           │        │            │
+                                 │           │        └──────┐     │
+                                 │           │               │     ▼
+                                 │           │               │  Continue
+                                 │           │               │  FOR loop
+                                 │           │               │     │
+                                 │           │               │     ▼
+                                 │           │               │ Ask:
+                                 │           │               │ Continue?
+                                 │           │               │
+                                 │           │               │   ┌──────┴──────┐
+                                 │           │               │   │             │
+                                 │           │               │  YES           NO
+                                 │           │               │   │             │
+                                 │           │               │   ▼             ▼
+                                 │           │               │ Next          BREAK
+                                 │           │               │ iteration        │
+                                 │           │               │   │             │
+                                 └───────────────────────────┘   │             ▼
+                                                                 │            END
+                                                                 ▼
+                                                           Next participant
+```
+
+And the simplified logic:
+
+```text
+FOR
+│
+│  "How many participants?"
+│
+├── WHILE (name)
+│     │
+│     └── "Is the name valid?"
+│
+├── WHILE (age)
+│     │
+│     └── "Is the age valid?"
+│
+└── WHILE (answer)
+      │
+      └── "Is the answer valid?"
+```
+
 <div style="display: inline_block"><br>
 <image align="center" alt = "PGhelfi-Py" height = "30" width = "40" src = "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
 </div>
