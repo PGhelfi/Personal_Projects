@@ -80,10 +80,10 @@ Below is the logic pathway of the code:
                                  │           │  SURVEY    survey
                                  │           │              │
                                  │           │              ▼
-                                 │           │     ┌─────────────────┐
-                                 │           │     │    WHILE True   │
+                                 │           │     ┌──────────────────┐
+                                 │           │     │    WHILE True    │
                                  │           │     │ (validate answer)│
-                                 │           │     └────────┬────────┘
+                                 │           │     └────────┬─────────┘
                                  │           │              │
                                  │           │        Is answer valid?
                                  │           │        ┌─────┴─────┐
