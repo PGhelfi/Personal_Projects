@@ -1,4 +1,4 @@
-# This is a Moderate User Experience Survey
+# This is a Moderate Level Coding for an Average Calculator
 # Python Procedural Exercise
 
 In this exercise, I have trained how to apply functions "def".
