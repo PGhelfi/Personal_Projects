@@ -1,8 +1,8 @@
-# This is a Moderate Level Code for a Water Reservoir Alert Level Message
+# This is a Moderate Level Code to calculate the average grades of students.
 
 # Python Procedural Exercise
 
-In this exercise, I have trained how to use funtions.
+In this exercise, I have trained how to use funtions working with lists and loops to populate them.
 
 # Important observations:
 
