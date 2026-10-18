@@ -1,27 +1,28 @@
-# This is a Moderate Level Coding for an Average Calculator
+# This is a Moderate Level Code for a Water Reservoir Alert Level Message
+
 # Python Procedural Exercise
 
-In this exercise, I have trained how to apply functions "def".
+In this exercise, I added the usage of libraries to the mix, particularly colorama.
 
 # Important observations:
 
-i) The def commands are used only for the average calculation and the status validation.
+i) Added both funtions and lists to the code. The function commands the conditional path to determine the color and the list stores the messages based on the inputted value by the user.
 
-ii) 3 input guards have been added for the name, the number and the grades with while + true loops and try + except + ValueError commands to stop the user from inputting anything (that I could think of) that might cause the program to break.
+ii) As usual, the while + True and Try + Except + ValueError guard has been added to prevent the user from inputting anything that deviates from the needed to run the code smoothly.
+
+iii) The library colorama was used within the funciton to determine the output for the user and help identify the level of alert based on the value inputted.
 
 # Basic instructions on how to run the program:
 
- - The program itself is complex with its forth and back, but, for the user, it is simple:
+a) The program starts by asking the user to input the a value from 1 to 5;
 
-a) The program starts by asking the user to input their names;
-
-b) Then the program asks how many grades will be considered for the average calculation;
-
-c) Then, the user inputs all the grades based on the number provided previously;
-
-d) The program will then provide their average grade and if they passed or not;
+b) The program automatically prints a message based on the value inputted, from Level 1: Critically Low, 2: Low, 3: Normal, 4: High and 5: Critically High.
 
 e) The program ends.
+
+<div style="display: inline_block"><br>
+<image align="center" alt = "PGhelfi-Py" height = "30" width = "40" src = "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
+</div>
 
 Below is the logic pathway of the code:
 
@@ -29,124 +30,62 @@ Below is the logic pathway of the code:
 
 ```text
 
-                         ┌──────────────────────────┐
-                         │          START           │
-                         └────────────┬─────────────┘
-                                      │
-                                      ▼
-                         ┌──────────────────────────┐
-                         │   Display system title   │
-                         └────────────┬─────────────┘
-                                      │
-                                      ▼
-                         ┌──────────────────────────┐
-                         │        WHILE True        │
-                         │     (validate name)      │
-                         └────────────┬─────────────┘
-                                      │
-                                Is name valid?
-                               ┌──────┴──────┐
-                              NO             YES
-                              │               │
-                              ▼               ▼
-                         Show error       EXIT WHILE
-                              │               │
-                              └───────┐       │
-                                      │       ▼
-                                      │  ┌──────────────────────────┐
-                                      │  │        WHILE True        │
-                                      │  │  (validate grade count)  │
-                                      │  └────────────┬─────────────┘
-                                      │               │
-                                      │       Is input a valid
-                                      │       integer > 0?
-                                      │         ┌─────┴─────┐
-                                      │        NO           YES
-                                      │        │             │
-                                      │        ▼             ▼
-                                      │   Show error     EXIT WHILE
-                                      │        │             │
-                                      └────────┘             ▼
-                                                   ┌─────────────────────┐
-                                                   │ Initialize          │
-                                                   │ Grades_List = []    │
-                                                   └──────────┬──────────┘
-                                                              │
-                                                              ▼
-                                                   ┌─────────────────────┐
-                                                   │ FOR i in range      │
-                                                   │ (InputGrades)       │
-                                                   └──────────┬──────────┘
-                                                              │
-                                                              ▼
-                                                   ┌─────────────────────┐
-                                                   │      WHILE True     │
-                                                   │   (validate grade)  │
-                                                   └──────────┬──────────┘
-                                                              │
-                                                     Is grade a number
-                                                      between 0 and 10?
-                                                        ┌─────┴─────┐
-                                                       NO           YES
-                                                       │             │
-                                                       ▼             ▼
-                                                  Show error    Add grade to
-                                                       │         Grades_List
-                                                       │             │
-                                                       │             ▼
-                                                       │        BREAK WHILE
-                                                       │             │
-                                                       └──────┐      │
-                                                              │      ▼
-                                                              │  More grades
-                                                              │  to enter?
-                                                              │   ┌───┴───┐
-                                                              │  YES      NO
-                                                              │   │        │
-                                                              │   ▼        ▼
-                                                              │ Next     EXIT FOR
-                                                              │ grade      │
-                                                              │            ▼
-                                                              │  ┌──────────────────────┐
-                                                              │  │ Calculate final      │
-                                                              │  │ average               │
-                                                              │  │ sum(Grades_List) /    │
-                                                              │  │ len(Grades_List)      │
-                                                              │  └──────────┬───────────┘
-                                                              │             │
-                                                              │             ▼
-                                                              │  ┌──────────────────────┐
-                                                              │  │ Validate average     │
-                                                              │  └──────────┬───────────┘
-                                                              │             │
-                                                              │       Average >= 6?
-                                                              │        ┌────┴────┐
-                                                              │       YES        NO
-                                                              │        │          │
-                                                              │        ▼          ▼
-                                                              │   APPROVED   Average >= 4?
-                                                              │                 ┌─┴─┐
-                                                              │                YES  NO
-                                                              │                 │    │
-                                                              │                 ▼    ▼
-                                                              │           RECOVERY  FAILED
-                                                              │                 │    │
-                                                              │                 └─┬──┘
-                                                              │                   │
-                                                              │                   ▼
-                                                              │  ┌──────────────────────────┐
-                                                              │  │ Display student name,    │
-                                                              │  │ registered grades,       │
-                                                              │  │ final average and status  │
-                                                              │  └────────────┬─────────────┘
-                                                              │               │
-                                                              │               ▼
-                                                              │  ┌──────────────────────────┐
-                                                              │  │           END            │
-                                                              │  └──────────────────────────┘
+          ┌────────────────────────────────────────┐
+          │             [Start Program]            │
+          └───────────────────┬────────────────────┘
+                              │
+                              ▼
+          ┌────────────────────────────────────────┐
+          │  Import Colorama & Define Messages     │
+          └───────────────────┬────────────────────┘
+                              │
+                              ▼
+          ┌────────────────────────────────────────┐
+          │              while True:               │ ◄── [MAIN LOOP]
+          └───────────────────┬────────────────────┘
+                              │
+                              ▼
+          ┌────────────────────────────────────────┐
+          │     try: Read user input               │ ◄── [ERROR BLOCK]
+          └───────────────────┬────────────────────┘
+                              │
+                    Did ValueError occur?
+                    ├──► YES ──► ┌────────────────────────────────────────┐
+                    │            │ Print invalid value error message      │ ──┐
+                    │            └────────────────────────────────────────┘   │
+                    └──► NO                                                  │
+                              │                                               │
+                              ▼                                               │
+          ┌────────────────────────────────────────┐                          │
+          │    if input_level < 1 or > 5?          │ ◄── [CONDITIONAL]        │
+          └───────────────────┬────────────────────┘                          │
+                    ├──► YES ──► ┌────────────────────────────────────────┐   │
+                    │            │ Print range warning & `continue`       │ ──┘
+                    │            └────────────────────────────────────────┘   │
+                    └──► NO                                                  │
+                              │                                               │
+                              ▼                                               │
+          ┌────────────────────────────────────────┐                          │
+          │  water_level(input_level) -> Color     │ ◄── [FUNCTION / CONDITIONAL]
+          └───────────────────┬────────────────────┘                          │
+                              │                                               │
+                              ▼                                               │
+          ┌────────────────────────────────────────┐                          │
+          │  output = reservoir_input[input - 1]   │                          │
+          └───────────────────┬────────────────────┘                          │
+                              │                                               │
+                              ▼                                               │
+          ┌────────────────────────────────────────┐                          │
+          │  Print colored alert & reset style     │                          │
+          └───────────────────┬────────────────────┘                          │
+                              │                                               │
+                              ▼                                               │
+          ┌────────────────────────────────────────┐                          │
+          │          break (Exit Loop)             │ ◄── [LOOP EXIT]──────────┘
+          └───────────────────┬────────────────────┘
+                              │
+                              ▼
+          ┌────────────────────────────────────────┐
+          │               [End]                    │
+          └────────────────────────────────────────┘
 ```
-
-
-<div style="display: inline_block"><br>
-<image align="center" alt = "PGhelfi-Py" height = "30" width = "40" src = "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
-</div>
