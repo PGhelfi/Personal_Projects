@@ -39,7 +39,7 @@ while True:
     except ValueError:
         print("Entrada inválida! Por favor, digite apenas números inteiros.")
 
-# This list stores the grades the studen inputs.
+# This list stores the grades the student inputs.
 Grades_List = []
 
 #This iteration then populates the list above to be used by the function and calculate the average grade.
