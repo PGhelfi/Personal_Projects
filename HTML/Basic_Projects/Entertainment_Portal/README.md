@@ -7,7 +7,11 @@ In this exercise, I have CSS alonside HTML to create a simple portal to display 
 # Observations:
 
 i) This is just to build up HTML knowledge and add CSS elements.
+
 ii) I have trained titles, headers, and links.
+
 iii) Added external images instead of local files.
+
 iv) Iahve created a .css style file
+
 v) Also created a .css reset file.
