@@ -1,0 +1,121 @@
+/* Estilo Geral da Página */
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+
+    /* Flexbox para posicionar o rodapé */
+    display: flex;
+    flex-direction: column;
+}
+
+
+   /* Container das três seções */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: space-between;
+    align-items: stretch;
+
+    gap: 20px;
+    padding: 25px;
+
+    width: 100%;
+    box-sizing: border-box;
+  
+    flex: 1;
+}
+
+
+/* Eestilo dos Quadrados */
+
+.secao {
+    flex: 1 1 0;
+    min-width: 0;
+
+    background-color: white;
+
+    padding: 15px;
+    border-radius: 12px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+/* Títulos das Seções */
+
+.titulo-secao {
+    color: #202b45;
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+
+/* Grupo das Imagens */
+
+.grupo-imagens {
+    display: flex;
+    flex-direction: row;
+
+    gap: 8px;
+    width: 100%;
+}
+
+
+/* Formatação das Imagens */
+
+.imagem {
+    width: calc(50% - 4px);
+    height: 130px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+    display: block;
+}
+
+
+/* Textos Explicativois */
+
+.texto {
+    font-size: 14px;
+    color: #444;
+
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+
+/* Rodapé ao Final da Página */
+
+footer {
+    margin-top: auto;
+}
+
+
+/* Responsividade para Celulares */
+
+@media (max-width: 768px) {
+
+    .container {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .secao {
+        width: 100%;
+        flex: auto;
+    }
+
+}
