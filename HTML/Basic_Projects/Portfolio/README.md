@@ -2,13 +2,13 @@
 
 # HTML + CSS Training
 
-In this exercise, I have tried to create a website via pages where I can Start to build my portfolio.
+In this exercise, I have tried to create a website where I can start to build my technology portfolio.
 
 # Observations:
 
-i) I have used both HTML and CSS for the website. Also added a reset file alongside the sytle one.
+i) I have used both HTML and CSS for this website project. Also added a CSS reset file alongside the sytle one.
 
-ii) Sope bootstrap elements were added, mainly to resize some elements (sucs as project cards) when the user is viewing it on mobile.
+ii) Some bootstrap elements were added, mainly to resize some elements (sucs as project cards) when the user is viewing it on mobile.
 
 iii) Very little actual Bootsrap was used in this projet, since I am starting to learn it.
 
