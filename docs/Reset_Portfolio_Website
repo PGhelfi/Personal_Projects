@@ -1,0 +1,137 @@
+/* 
+   Reset CSS
+   Portoflio Pessoal
+   Compatível com Bootstrap 5.3.8 */
+
+
+/*  1. Modelo */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/* 2. Configuração do Documento */
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* 3. Margens e espaçamentos */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure {
+    margin: 0;
+}
+
+
+/* 4. Imagens e Elementos de Mídia */
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+img {
+    height: auto;
+}
+
+
+/* 5. Formulários */
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+
+/* 6. Links */
+
+a {
+    text-decoration: none;
+}
+
+
+/* 7. Listas */
+
+ul,
+ol {
+    padding-left: 0;
+}
+
+
+/* 8. Títulos */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.2;
+}
+
+
+/* 9. Botões */
+
+button {
+    cursor: pointer;
+}
+
+
+/* 10. Tabelas */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* 11. Acessibilidade */
+
+:focus-visible {
+    outline: 2px solid #D0D0D0;
+    outline-offset: 3px;
+}
+
+
+/* 12. MOVIMENTOS REDUZIDOS */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+}
