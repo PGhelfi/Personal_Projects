@@ -1,1 +1,764 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Meu portfólio pessoal e profissional.">
+
+    <title>Pedro's Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Seção CSS Styel and Reset -->
+    <link rel="stylesheet" href="Reset_Portfolio_Website.css">
+    <link rel="stylesheet" href="Style_Portfolio_Website.css">
+
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+
+    <header id="topo">
+
+        <!-- Menu de Navegação -->
+
+        <nav class="navbar navbar-expand-lg navbar-dark portfolio-navbar sticky-top">
+
+            <div class="container-fluid">
+
+                <a class="navbar-brand logo" href="#inicio">
+                    Pedro's Portfolio
+                </a>
+
+                <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal"
+                    aria-expanded="false"
+                    aria-label="Abrir menu">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#perfil">Perfil</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projetos">Projetos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#habilidades">Habilidades</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#formacao">Formação</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experiencias">Experiências</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+        <!-- Imagem Cabeçalho -->
+
+        <div class="header-banner">
+
+            <img
+                src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=85"
+                alt="Ambiente moderno de trabalho">
+
+        </div>
+
+    </header>
+<!-- Conteúdo Principal -->
+
+<main>
+
+    <!-- Seção Inicial -->
+
+    <section id="inicio">
+
+        <img
+            class="section-image"
+            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1000&q=85"
+            alt="Computador em ambiente de desenvolvimento">
+
+        <h1>Olá, meu nome é Pedro Ghelfi!</h1>
+
+        <p>
+            É um prazer te-los aqui comigo.
+            Este é o meu portfolio, onde você poderá visualizar os meus projetos.
+            Fique à vontade para entrar em contato comigo em caso de quaisquer dúvidas.
+            Basta clicar na seção "Contatos".
+        </p>
+
+        <a href="#projetos">
+            Conheça meus projetos
+        </a>
+
+    </section>
+
+
+    <!-- Seção de Perfil -->
+
+    <section id="perfil">
+
+        <h2>Sobre mim</h2>
+
+        <img
+            class="section-image"
+            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=85"
+            alt="Retrato profissional ilustrativo">
+
+        <p>
+           Sou formado em Marketing e trabalhei muito tempo com relacionamento ao cliente, criando relatórios, lidando com CRM e criando e tratando planilhas e dados. Apaixonado por tecnologia, resolvi mergulhar em Ciências de Dados e estudar matemática e estatística. Hoje, foco em projetos Python e Data Base (PostgreSQL). Tive a oportunidade de estagiar em uma empresa pequena de tecnologia, mas que me ensinou muito sobre o mercado. Sou muito grato ao meu gestor anterior que transferiu um pouco do seu conhecimento para mim. Além disso, adoro Excel e lidar com planilhas e DB.
+        </p>
+
+    </section>
+<!-- Seção de Projetos -->
+
+<section id="projetos">
+
+    <h2>Meus projetos</h2>
+
+    <p class="projects-intro">
+        Conheça alguns dos projetos que desenvolvi
+        e as tecnologias utilizadas.
+    </p>
+
+    <div class="container-fluid px-0">
+
+        <div class="row g-4">
+
+            <!-- Projeto 01 -->
+
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <article class="card project-card h-100">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=85"
+                        class="card-img-top project-image"
+                        alt="Código de programação">
+
+                    <div class="card-body">
+
+                        <h3 class="card-title">Projeto 01</h3>
+
+                        <p class="card-text">
+                            Este é um projeto Python, onde treinei programação procedural e aplicação de funções.
+                        </p>
+
+                        <p class="project-technologies">
+                            HTML · CSS · JavaScript
+                        </p>
+
+                        <a href="#" class="btn btn-silver">
+                            Visualizar projeto
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- Projeto 02 -->
+
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <article class="card project-card h-100">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=85"
+                        class="card-img-top project-image"
+                        alt="Placa eletrônica e tecnologia">
+
+                    <div class="card-body">
+
+                        <h3 class="card-title">Projeto 02</h3>
+
+                        <p class="card-text">
+                            Neste projeto, desenvolvi um sistema simples de descontos sobre produtos.
+                        </p>
+
+                        <p class="project-technologies">
+                            Bootstrap · CSS · JavaScript
+                        </p>
+
+                        <a href="#" class="btn btn-silver">
+                            Visualizar projeto
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- Projeto 03 -->
+
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <article class="card project-card h-100">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=85"
+                        class="card-img-top project-image"
+                        alt="Editor de código">
+
+                    <div class="card-body">
+
+                        <h3 class="card-title">Projeto 03</h3>
+
+                        <p class="card-text">
+                            Já neste, fiz um contator de datas de aniversário para treinar Programação Orientada a Objetos.
+                        </p>
+
+                        <p class="project-technologies">
+                            Git · GitHub · HTML · CSS
+                        </p>
+
+                        <a href="#" class="btn btn-silver">
+                            Visualizar projeto
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Seção de Habilidades -->
+
+<section id="habilidades">
+
+    <h2>Minhas habilidades</h2>
+
+    <img
+        class="section-image"
+        src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1000&q=85"
+        alt="Equipe trabalhando com tecnologia">
+
+
+    <!-- Hard Skills -->
+
+    <div class="skills-container">
+
+        <h3>Hard Skills</h3>
+
+        <p>
+            Conhecimentos técnicos e ferramentas
+            utilizadas no desenvolvimento de projetos.
+        </p>
+
+
+        <!-- Excel -->
+
+        <div class="skill-item">
+
+            <div class="skill-heading">
+                <span>Excel</span>
+                <span>90%</span>
+            </div>
+
+            <div class="progress"
+                role="progressbar"
+                aria-label="Conhecimento em Python"
+                aria-valuenow="90"
+                aria-valuemin="0"
+                aria-valuemax="100">
+
+                <div class="progress-bar silver-progress"
+                    style="width: 90%">
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Python -->
+
+        <div class="skill-item">
+
+            <div class="skill-heading">
+                <span>Python</span>
+                <span>70%</span>
+            </div>
+
+            <div class="progress"
+                role="progressbar"
+                aria-label="Conhecimento em Python"
+                aria-valuenow="70"
+                aria-valuemin="0"
+                aria-valuemax="100">
+
+                <div class="progress-bar silver-progress"
+                    style="width: 70%">
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- HTML -->
+
+        <div class="skill-item">
+
+            <div class="skill-heading">
+                <span>HTML</span>
+                <span>50%</span>
+            </div>
+
+            <div class="progress"
+                role="progressbar"
+                aria-label="Conhecimento em HTML"
+                aria-valuenow="50"
+                aria-valuemin="0"
+                aria-valuemax="100">
+
+                <div class="progress-bar silver-progress"
+                    style="width: 50%">
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CSS -->
+
+        <div class="skill-item">
+
+            <div class="skill-heading">
+                <span>CSS</span>
+                <span>50%</span>
+            </div>
+
+            <div class="progress"
+                role="progressbar"
+                aria-label="Conhecimento em CSS"
+                aria-valuenow="50"
+                aria-valuemin="0"
+                aria-valuemax="100">
+
+                <div class="progress-bar silver-progress"
+                    style="width: 50%">
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Git e Github -->
+
+        <div class="skill-item">
+
+            <div class="skill-heading">
+                <span>Git e GitHub</span>
+                <span>40%</span>
+            </div>
+
+            <div class="progress"
+                role="progressbar"
+                aria-label="Conhecimento em Git e GitHub"
+                aria-valuenow="40"
+                aria-valuemin="0"
+                aria-valuemax="100">
+
+                <div class="progress-bar silver-progress"
+                    style="width: 40%">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Soft Skills -->
+
+    <div class="soft-skills-container">
+
+        <h3>Soft Skills</h3>
+
+        <p>
+            Competências comportamentais e interpessoais
+            importantes para o ambiente profissional.
+        </p>
+
+        <div class="row g-3">
+
+
+            <!-- Comunicação -->
+
+            <div class="col-12 col-md-6">
+
+                <article class="card soft-skill-card h-100">
+
+                    <div class="card-body">
+
+                        <h4 class="card-title">
+                            Comunicação
+                        </h4>
+
+                        <p class="card-text">
+                            Capacidade de transmitir ideias
+                            com clareza e objetividade.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- Trabalho em Equipe -->
+
+            <div class="col-12 col-md-6">
+
+                <article class="card soft-skill-card h-100">
+
+                    <div class="card-body">
+
+                        <h4 class="card-title">
+                            Trabalho em equipe
+                        </h4>
+
+                        <p class="card-text">
+                            Colaboração e compartilhamento
+                            de conhecimentos com outras pessoas.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- Organização -->
+
+            <div class="col-12 col-md-6">
+
+                <article class="card soft-skill-card h-100">
+
+                    <div class="card-body">
+
+                        <h4 class="card-title">
+                            Organização
+                        </h4>
+
+                        <p class="card-text">
+                            Planejamento de tarefas,
+                            prioridades e cumprimento de prazos.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- Resolução de Problemas -->
+
+            <div class="col-12 col-md-6">
+
+                <article class="card soft-skill-card h-100">
+
+                    <div class="card-body">
+
+                        <h4 class="card-title">
+                            Resolução de problemas
+                        </h4>
+
+                        <p class="card-text">
+                            Capacidade de analisar situações
+                            e encontrar soluções.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- Aprendizado Contínuo -->
+
+            <div class="col-12 col-md-6">
+
+                <article class="card soft-skill-card h-100">
+
+                    <div class="card-body">
+
+                        <h4 class="card-title">
+                            Aprendizado contínuo
+                        </h4>
+
+                        <p class="card-text">
+                            Interesse em desenvolver novas
+                            competências e conhecimentos.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Seção de Formação Acadêmica -->
+
+<section id="formacao">
+
+    <h2>Formação acadêmica</h2>
+
+    <img
+        class="section-image"
+        src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1000&q=85"
+        alt="Materiais de estudo e formação acadêmica">
+
+
+    <div class="education-container">
+
+        <!-- Formação 01 -->
+
+        <article>
+
+            <h3>Marketing</h3>
+
+            <p><strong>Instituição:</strong> ESAMC</p>
+
+            <p><strong>Período:</strong> 2009 – 2013</p>
+
+            <p>
+                Sou formado em Marketing e tenho bastante visão de negócios, comunicação com clientes e gestão.
+            </p>
+
+        </article>
+
+
+        <!-- Formação 02 -->
+
+        <article>
+
+            <h3>Desenvolvimento de Sistemas</h3>
+
+            <p><strong>Instituição:</strong> Centro Paula Souza - ETEC</p>
+
+            <p><strong>Período:</strong> 2026</p>
+
+            <p>
+                Hoje, curso Ciências de Dados e busco especialização em Python, Banco de Dados, automações e integrações.
+            </p>
+
+        </article>
+
+
+        <!-- CERTIFICAÇÕES -->
+
+        <article>
+
+            <h3>Certificações</h3>
+
+            <p><strong>Certificado:</strong> Vários Cursos</p>
+
+            <p><strong>Emissor:</strong> Várias entidades</p>
+
+            <p>
+                Tenho vários cursos em Excel, Python e Banco de Dados.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+<!-- Seção de Experiências Profissionais -->
+
+<section id="experiencias">
+
+    <h2>Experiências profissionais</h2>
+
+    <img
+        class="section-image"
+        src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1000&q=85"
+        alt="Equipe trabalhando em ambiente profissional">
+
+
+    <div class="experience-container">
+
+        <!-- Experiência 01 -->
+
+        <article>
+
+            <h3>Cargo ou função</h3>
+
+            <p><strong>Empresa:</strong> Nome da empresa</p>
+
+            <p><strong>Período:</strong> 2024 – Atual</p>
+
+            <p>
+                A completar.
+            </p>
+
+        </article>
+
+
+        <!-- Experiência 02 -->
+
+        <article>
+
+            <h3>Estágio ou experiência anterior</h3>
+
+            <p><strong>Empresa:</strong> Nome da empresa</p>
+
+            <p><strong>Período:</strong> 2023 – 2024</p>
+
+            <p>
+                A completar.
+            </p>
+
+        </article>
+
+
+        <!-- Prpojetos Independentes -->
+
+        <article>
+
+            <h3>Projetos independentes e freelance</h3>
+
+            <p><strong>Área:</strong> Desenvolvimento e tecnologia</p>
+
+            <p><strong>Período:</strong> 2025 – Atual</p>
+
+            <p>
+                A completar.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+<!-- Seção de Contatos -->
+
+<section id="contato">
+
+    <h2>Entre em contato</h2>
+
+    <img
+        class="section-image"
+        src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=85"
+        alt="Ambiente profissional moderno">
+
+    <p>
+        Gostaria de conversar sobre projetos ou oportunidades profissionais?
+        Mande um oi no meu e-mail!
+    </p>
+
+    <ul>
+
+        <li>
+            <a href="mailto:seuemail@email.com">
+                E-mail
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer">
+                LinkedIn
+            </a>
+        </li>
+
+        <li>
+            <a href="https://github.com/"
+                target="_blank"
+                rel="noopener noreferrer">
+                GitHub
+            </a>
+        </li>
+
+    </ul>
+
+</section>
+
+</main>
+
+
+<!-- Rodapé -->
+
+<footer>
+
+    <div class="footer-banner">
+
+        <img
+            src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=85"
+            alt="Detalhes de tecnologia e circuitos">
+
+    </div>
+
+    <p>
+        &copy; 2026 Pedro Ghelfi Raza.
+        Todos os direitos reservados.
+    </p>
+
+    <a href="#topo">
+        Voltar ao topo
+    </a>
+
+</footer>
+
+
+<!-- Bootstrap e Javascript -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
