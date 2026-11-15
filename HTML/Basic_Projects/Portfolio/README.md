@@ -12,6 +12,6 @@ ii) Some bootstrap elements were added, mainly to resize some sections (such as 
 
 iii) Very little actual bootstrap was used in this projet, since I am starting to learn it.
 
-iv) I went for a very simplke design, with black, white and gray scales.
+iv) I went for a very simple design, with black, white and gray scales.
 
 v) Added a section where I put hard and soft skills, alongside experiences.
