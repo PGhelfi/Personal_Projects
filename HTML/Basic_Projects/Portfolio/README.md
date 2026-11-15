@@ -10,7 +10,7 @@ i) I have used both HTML and CSS for this website project. Also added a CSS rese
 
 ii) Some bootstrap elements were added, mainly to resize some sections (such as project cards) when the user is viewing it on mobile.
 
-iii) Very little actual Bootsrap was used in this projet, since I am starting to learn it.
+iii) Very little actual bootstrap was used in this projet, since I am starting to learn it.
 
 iv) I went for a very simplke design, with black, white and gray scales.
 
